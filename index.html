@@ -1,10 +1,10 @@
 <!-- 
-    Name: Grace Knutson
-    Course: Software Development 20S
-    Teacher: Mr. Hardman
-    School: Pembina Trails Early College
-    Date Last Modified: 11/12/2022
-  -->
+  Name: Grace Knutson
+  Course: Software Development 20S
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 19/01/2023
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,101 +12,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treaty Five</title>
+    <title>About the Numbered Treaties</title>
 
-    <!-- Note: Favicon should be changed to a less complex image as the user cannot see it very well, but currently I do not have a better one to use.-->
+    <!-- NOTE: Favicon should be changed to a less complex image as the user cannot see it very well, but currently I do not have a better one to use.-->
     <link
       rel="icon"
       type="image/x-icon"
       href="images/treaty-five-symbol.jpg"
-      alt="A cricle outlined in blue and red rings, with the words Summit of Treaty Five and Sovereign Nations written in the blue one. On the inside, two men are shaking hands. One is an indigenous cheif, while the other is a representative of the queen. The backround behind them is yellow." />
+      alt="A circle outlined in blue and red rings, with the words Summit of Treaty Five and Sovereign Nations written in the blue one. On the inside, two men are shaking hands. One is an indigenous cheif, while the other is a representative of the queen. The backround behind them is yellow." />
 
-    <link rel="stylesheet" href="stylesheets/main.css" />
     <!-- Links the stylesheet. -->
+    <link rel="stylesheet" href="stylesheets/main.css" />
 
     <style>
-      nav ul {
-        list-style: none;
-      }
-
-      nav li {
-        display: inline-block;
-        margin: 0px;
-      }
-
-      /* Styling for the top image */
-      img {
-        padding-top: 20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      /* Additional spacing added above this header to emphasize the image of the treaty medal (located above the header). */
-      #numbered-treaties-header {
-        margin-top: 80px;
-      }
-
-      .map-of-treaties {
-        float: right;
-        padding-right: 50px;
-        padding-left: 50px;
-        padding-top: 5px;
-      }
-
-      p {
-        margin: 1px;
-        padding-right: 60px;
-        padding-bottom: 60px;
-      }
-
-      span {
-        text-decoration: underline;
-        font-style: italic;
-      }
-
-      /* Creates columns. */
+      /* Creates columns, floats them to left and sets margin, padding, height, and width. */
       .column {
         float: left;
-        margin-left: 35px;
-        width: 450px;
+        margin-left: 0px;
+        width: 400px;
         padding: 10px;
         height: 300px;
         margin-bottom: 100px;
       }
 
-      /* Column headers */
+      /* Column headers have a red background and off-white text. They have 15px of padding and no margin-bottom. */
       .column h3 {
         background-color: #bb2128;
-        color: #fff;
+        color: #ededed;
         padding: 15px;
         margin-bottom: 0px;
       }
 
-      /* Column content */
+      /* Column content (the ul) has 5px of padding on the top and bottom, a gray background colour, and off-white text. */
       .column ul {
         padding-top: 5px;
         padding-bottom: 5px;
         background-color: #414042;
-        color: #fff;
+        color: #ededed;
       }
+
+      /* List items have 5px of padding around them. */
       .column li {
         padding: 5px;
       }
 
+      /* Margin for footer uses inline styling on each page because the <divs> interfere. */
       footer {
-        margin-top: 400px;
-        background-color: #bb2128;
-        color: #fff;
-        padding-bottom: 20px;
-      }
-
-      footer p {
-        padding-bottom: 0px;
-      }
-
-      footer a {
-        color: #fff;
+        margin-top: 500px;
       }
     </style>
   </head>
@@ -117,22 +69,28 @@
 
     <nav>
       <ul>
-        <li><a class="active-page" href="index.html">Treaty Five</a></li>
+        <li><a href="index.html" class="active">About the Numbered Treaties</a></li>
+        <li><a href="treaty-five.html">Treaty Five</a></li>
+        <li><a href="adhesions.html">Adhesions To Treaty Five</a></li>
       </ul>
     </nav>
 
     <main>
-      <img
-        src="images/treaty-medal.jpg"
-        width="1150px"
-        alt="An image of a round, silver medal depicting two men shaking hands in the middle. One is an indigenous cheif, while the other is a representative of the queen. In the backround there are tipis, and the sun on the horizon." />
+      <figure>
+        <img
+          class="top-images"
+          src="images/treaty-medal.jpg"
+          width="1150px"
+          alt="An image of a round, silver medal depicting two men shaking hands in the middle. One is an indigenous chief, while the other is a representative of the queen. In the backround there are tipis, and the sun on the horizon." />
+        <figcaption>A treaty medal commissioned to present to Indigenous chiefs when a treaty was agreed upon.</figcaption>
+      </figure>
 
       <!-- <h2> is used consistently to show that each paragraph is of equal importance (this is especially relevant in the case of screenreaders). -->
-      <h2 id="numbered-treaties-header">About The Numbered Treaties</h2>
+      <h2 class="numbered-treaties-header">About The Numbered Treaties</h2>
 
       <img
         src="images/numbered-treaties-canada.jpg"
-        width="600px"
+        width="550px"
         alt="A map of Canada showing the different treaty areas highlighted in different colours. Read about this in the About the Numbered Treaties paragraph."
         class="map-of-treaties" />
 
@@ -152,92 +110,60 @@
         providing a context of mutual responsibilities and rights. As modern land claims are resolved and concluded, the Canadian government
         and treaty First Nations work together towards improving the lives of Indigenous peoples.
       </p>
-      <!-- Line breaks added to prevent text from running underneath the img. -->
 
-      <h2>About Treaty Five</h2>
+      <h2>Learn More:</h2>
+      <iframe
+        width="1000"
+        height="562"
+        src="https://www.youtube.com/embed/rwMOtBwtAeY"
+        title="A Webinar About Treaty 5 and it's History."
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <p>Click this link to <a href="https://www.youtube.com/watch?v=rwMOtBwtAeY">view in YouTube</a></p>
 
-      <img
-        src="images/treaty-five-land.png"
-        width="600px"
-        alt="A map of Manitoba showing the locations of different indigenous peoples throughout treaty five land, as well surrounding treaties and the boreal forest."
-        class="map-of-treaties" />
+      <h2>Information about Treaty 5:</h2>
 
-      <p>
-        <span>Treaty 5</span> — also known as the Winnipeg Treaty — was signed in 1875-76 by the federal government, Ojibwa peoples and the
-        Swampy Cree of Lake Winnipeg. This treaty included First Nations tribes located in the northern regions of Saskatchewan, Manitoba, and
-        Ontario, including Saulteaux, the number of bands that inhabited the Beren's River region, and the Norway House region. Treaty 5 covers
-        much of present-day central and northern Manitoba. The aboriginal people that were included in treaty 5 wanted nothing more than what
-        had already been offered to other first nations group under the original treaties. The people in and around Lake Winnipeg had not been
-        included under previous agreements. They wanted recognition of their claim to the area as well as certain hunting and fishing rights.
-        Other groups around those included in treaty 5 had also received “treaty money” and this was also a demand made by some groups. There
-        were also two demands from specific bands that made the signing of this treaty somewhat unique. The band at Beren's River had demanded
-        construction tools in addition to the monetary payment. The people of the Norway House (located about 30 km north of Lake Winnipeg)
-        were also suffering from starvation, as the lands there were not suitable for farming. This community was looking to relocate from
-        north of the lake to an area in the south that had more suitable agricultural lands.
-      </p>
-
-      <h2>History</h2>
-
-      <p>
-        <span>In the mid-1870s</span>, the Indigenous peoples of the Lake Winnipeg area were interested in making a treaty with the Government
-        of Canada. They had heard about the concessions offered to the Indigenous nations of Treaties 1 to 4, and subsequently demanded the
-        government provide similar economic assistance, provisions of tools and protection against the encroachment of outsiders (such as
-        surveyors and settlers) on their territories. While the government was interested in opening up the Lake Winnipeg region for future
-        development, it was not initially keen on negotiating a new treaty. Treaties 1 to 4 had already secured title to the agricultural belt
-        in the West. The government eventually agreed to enter treaty talks with the Berens River bands and other communities around the lake.
-        However, they were not yet willing to negotiate a treaty with Indigenous bands north of the lake, even though they too had expressed a
-        desire to enter into a treaty with the Crown. The land in the north had limited agricultural and settlement potential, and was
-        therefore not a priority for the government. However, one exception was made for the Norway House band. Their relocation proposal was
-        met with government approval, and it was agreed that the Crown would include the people of the Norway House in treaty negotiations.
-      </p>
-
-      <h2>Northern Adhesions</h2>
-
-      <p>
-        In 1905, the government wanted to acquire the land surrenders of peoples living in the North. Railway development, and the discovery of
-        oil in the Mackenzie River Valley in 1920, also made negotiating a treaty with northern Indigenous groups a priority. Originally, the
-        government decided that the Cree bands living at Nelson House and Split Lake would adhere to Treaty 10. On second thought, government
-        officials realized that Treaty 10 provided larger payments and reserves than earlier Numbered Treaties. It was therefore decided that
-        acquiring the adhesion of these bands to Treaty 5 would be more beneficial for the government. These bands signed the treaty. From
-        there, the government expanded the treaty territory further by travelling to the mainly Cree First Nations of Oxford House, God's Lake
-        and Island Lake. The Indigenous representatives from these communities signed the treaty in 1909. Lastly, in 1910, the Oji-Cree of Deer
-        Lake East and the Indigenous peoples of Fort Churchill and York Factory were added, concluding the final formal stage of adhesions to
-        the treaty.
-      </p>
-
-      <!-- <div> tag used to easily group and style each column. -->
-      <div class="column">
-        <h3>Communities Involved:</h3>
-        <!-- Switching to <h3> tags for columns as they are a way to organise information given in the above paragraphs. -->
-        <ul style="padding-bottom: 89px">
-          <!-- Inline styling used for two <div>s as use of IDs would make things more complex than necessary. -->
-          <li>First Nations tribes located in the northern regions of Saskatchewan, Manitoba, and Ontario</li>
-          <li>Saulteaux tribes</li>
-          <li>Swampy Cree tribes including the number of bands that inhabited the Beren's River region and the Norway House region</li>
-        </ul>
-      </div>
-      <div class="column">
-        <h3>Provisions:</h3>
-        <ul>
-          <li>160 acres for farming per family of 5</li>
-          <li>The right to hunt, fish and trap</li>
-          <li>Annuities paid annually, $5 per person</li>
-          <li>Chiefs and headmen provided with clothing every 3 years</li>
-          <li>$500 per head and farm stock, tools, equipment and flags presented once</li>
-          <li>Numerous tools, seed and animals for every family and band cultivating on a reserve</li>
-        </ul>
-      </div>
-      <div class="column">
-        <h3>Historical Documents Involved:</h3>
-        <ul style="padding-bottom: 70px">
+      <!--
+        <div> tag used to easily group and style each column, and the section tag to group it all together.
+        There may be issues with how the columns interact with the footer on smaller devices, 
+        as the website is fixed layout.
+      -->
+      <section>
+        <div class="column">
+          <h3>Communities Involved:</h3>
+          <!-- Switching to <h3> tags for columns as they are a way to organize information given in the above paragraphs. -->
+          <ul style="padding-bottom: 107px">
+            <!-- Inline styling used for <div>s as use of IDs would make things more complex than necessary. -->
+            <li>First Nations tribes located in the northern regions of Saskatchewan, Manitoba, and Ontario</li>
+            <li>Saulteaux tribes</li>
+            <li>Swampy Cree tribes including the number of bands that inhabited the Beren's River region and the Norway House region</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Agreed Upon Provisions:</h3>
           <!-- Second use of inline styling. -->
-          <li>Treaty No. 5 Text</li>
-          <li>Adhesion by Saulteaux or Chippewa Indians</li>
-          <li>Adhesion by Saulteaux or Chippewa and Cree Indians</li>
-          <li>Adhesion to Treaty 5 by Split Lake and Nelson House</li>
-          <li>Adhesion to treaty no. 5 - 1908 - Norway House, Cross Lake, and Fisher River</li>
-        </ul>
-      </div>
+          <ul style="padding-bottom: 27px">
+            <li>160 acres for farming per family of 5</li>
+            <li>The right to hunt, fish and trap</li>
+            <li>Annuities paid annually, $5 per person</li>
+            <li>Chiefs and headmen provided with clothing every 3 years</li>
+            <li>$500 per head and farm stock, tools, equipment and flags presented once</li>
+            <li>Numerous tools, seed and animals for every family and band cultivating on a reserve</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Historical Documents Involved:</h3>
+          <!-- Third use of inline styling. -->
+          <ul style="padding-bottom: 87px">
+            <li>Treaty No. 5 Text</li>
+            <li>Adhesion by Saulteaux or Chippewa</li>
+            <li>Adhesion by Saulteaux or Chippewa and Cree</li>
+            <li>Adhesion to Treaty 5 by Split Lake and Nelson House</li>
+            <li>Adhesion to treaty no. 5 - 1908 - Norway House, Cross Lake, and Fisher River</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -246,13 +172,13 @@
       <ul>
         <li>
           <a
-            href="https://www.thecanadianencyclopedia.ca/en/article/treaty-5#:~:text=Treaty%205%20%E2%80%94%20also%20known%20as,portions%20of%20Saskatchewan%20and%20Ontario."
-            >The Canadian Encyclopedia</a
-          >
+            href="https://www.thecanadianencyclopedia.ca/en/article/treaty-5#:~:text=Treaty%205%20%E2%80%94%20also%20known%20as,portions%20of%20Saskatchewan%20and%20Ontario.">
+            The Canadian Encyclopedia
+          </a>
         </li>
-        <li><a href="https://www.treaty5.com/">Treaty 5</a></li>
         <li><a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028695/1564413402108">The Government of Canada</a></li>
         <li><a href="https://canadianhistoryworkshop.wordpress.com/treaties/treaty-five/">Canadian History Workshop</a></li>
+        <li><a href="https://www.treaty5.com/">Treaty 5</a></li>
       </ul>
     </footer>
   </body>
